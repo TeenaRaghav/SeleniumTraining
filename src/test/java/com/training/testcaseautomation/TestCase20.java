@@ -10,14 +10,12 @@ public class TestCase20 extends BaseTest{
 		Select interval1= new Select(driver.findElement(By.xpath("//table[@class=\"opportunitySummary\"]/tbody/tr[1]/td[1]/select")));
 		interval1.selectByVisibleText("Current and Next FQ");
 //		select open from include
-		Select include1 = new Select(driver.findElement(By.xpath("//select[@id=\"open\"]")));
-		include1.selectByVisibleText("Open Opportunities");
-//		select closed from include
-		Select include2 = new Select(driver.findElement(By.xpath("//select[@id=\"open\"]")));
-		include2.selectByVisibleText("Closed Opportunities");
-//		select closed/won from include
-		Select include3 = new Select(driver.findElement(By.xpath("//select[@id=\"open\"]")));
-		include3.selectByVisibleText("Closed/Won Opportunities");
+		Select include = new Select(driver.findElement(By.xpath("//select[@id=\"open\"]")));
+		include.selectByVisibleText("Open Opportunities");
+////		select closed from include
+//		include.selectByVisibleText("Closed Opportunities");
+////		select closed/won from include
+//		include.selectByVisibleText("Closed/Won Opportunities");
 //		click on run report  button
 		driver.findElement(By.xpath("//input[@value=\"Run Report\"]")).click();
 		String pageTitle = driver.findElement(By.xpath("//div[@class=\"content\"]/h1")).getText();
