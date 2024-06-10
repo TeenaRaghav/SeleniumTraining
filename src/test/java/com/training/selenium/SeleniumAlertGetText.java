@@ -40,6 +40,7 @@ public class SeleniumAlertGetText {
 	public static void main(String[] args) throws InterruptedException {
 		logInToApplication();
 		Alert alert = driver.switchTo().alert();
+
 		System.out.println(alert.getText());
 		alert.accept();
 		Thread.sleep(4000);

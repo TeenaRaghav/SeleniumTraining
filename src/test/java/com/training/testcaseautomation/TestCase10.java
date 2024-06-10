@@ -3,6 +3,8 @@ package com.training.testcaseautomation;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import com.sun.tools.javac.util.Assert;
+
 public class TestCase10 extends BaseTest{
 	static void logInToApplication() {
 		driver.get("https://login.salesforce.com/");

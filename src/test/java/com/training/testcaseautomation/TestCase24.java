@@ -15,7 +15,7 @@ public class TestCase24 extends BaseTest {
 		leadsTab();
 		todaysLeads();
 //		validate
-		Select selectDropdwn = new Select(driver.findElement(By.xpath("//select[@class=\"title\"]")));
+		Select selectDropdwn = new Select(driver.findElement(By.xpath("//select[@id='fcf']")));
 		WebElement selectedoption = selectDropdwn.getFirstSelectedOption(); 
 		String selectedtext = selectedoption.getText();
 //		System.out.println("Selected option: " + selectedtext);

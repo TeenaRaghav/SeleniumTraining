@@ -10,7 +10,7 @@ public class LaunchingBrowserWithoutWebDriverManager {
 
 	public static void main(String[] args) {
 //		launch the browser without webDriverManager
-		System.setProperty("webdriver.chrome.driver","C:\\selenium\\browsers\\chromedriver-win64\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\selenium\\chromedriver-win64\\chromedriver.exe");
 //		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.get("https://www.google.com/");

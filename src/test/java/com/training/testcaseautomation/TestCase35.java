@@ -25,7 +25,7 @@ public static void main(String[] args) throws InterruptedException {
 	logInToApplication();
 	hometab();
 //	click on the first and last name link
-	driver.findElement(By.xpath("(//a[contains(text(),\"Teena singh\")])[1]")).click();
+	driver.findElement(By.xpath("(//a[contains(text(),\"Teena Raghav\")])[1]")).click();
 	editButtonNextToContact();
 	 aboutInEditBtnNextToContact();
 //	 validate lastname is edited

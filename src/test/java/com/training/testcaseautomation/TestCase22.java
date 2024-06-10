@@ -10,7 +10,7 @@ public class TestCase22 extends BaseTest {
 	static void viewDropdownOnLeadsPage() {
 		Select viewelement = new Select( driver.findElement(By.xpath("//select[@name=\"fcf\"]")));
 		List<WebElement> alloptions = viewelement.getOptions();
-
+	
 		for(WebElement option : alloptions ) {
 		System.out.println(option.getText());
 		}
